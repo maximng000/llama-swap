@@ -43,6 +43,7 @@ func main() {
 
 	if *logLevel == "debug" {
 		log.Printf("debug logging enabled")
+		log.Printf("tip: set --log-level=info to reduce verbosity in production")
 	}
 
 	server, err := proxy.NewServer(cfg, *listenAddr)
